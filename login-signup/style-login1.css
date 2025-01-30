@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #11121a;
+    --hover-color: #272832;
+    --accent-color: #0366dfe0;
+    --text-color: #c9c9c9;
+}
+
+
+
+body {
+    min-height: 100vh;
+    background-image: url(/img/pexels-pixabay-459388.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Poppins, Segoe UI, sans-serif;
+    backdrop-filter: blur(5px);
+
+}
+
+nav {
+    background-color: var(--primary-color);
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
+    padding: 10px;
+
+
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+
+
+}
+
+nav a {
+
+    height: 100%;
+    padding: 0 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    transition: 1s ease;
+    border-radius: 10px;
+    font-weight: 500;
+
+
+}
+
+nav a:hover {
+    background-color: var(--hover-color);
+}
+
+nav li:first-child {
+    margin-right: auto;
+    letter-spacing: 10px;
+    font-weight: 800;
+
+}
+
+.menu {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.233);
+    backdrop-filter: blur(100px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+
+
+#Login {
+    background-color: var(--accent-color);
+
+
+}
+
+.menu svg,
+.sidebar svg {
+    fill: var(--text-color);
+}
+
+
+
+@media (max-width: 800px) {
+    .hidemobile {
+        display: none;
+
+    }
+
+    .loginhide {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+@media(max-width:400px) {
+    .sidebar {
+        width: 100%;
+    }
+
+}
+
+
+
+/*login styling*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*:root{
+  --accent-color: #8672FF;
+  --base-color: white;
+  --text-color: #2E2B41;
+  --input-color: #F3F0FF;
+}*/
+
+:root {
+    --base-color: #11121a;
+    --text-color: #c9c9c9;
+    --input-color: #F3F0FF;
+}
+
+
+
+.wrapper {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    margin: auto;
+    margin-top: 5%;
+    height: 70vh;
+    width: max(30%, 600px);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1.4px solid rgba(255, 255, 255, 0.192);
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+form {
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form label {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+    fill: var(--text-color);
+    color: var(--text-color);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+form input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(--input-color);
+    border-left: none;
+    background-color: rgb(255, 255, 255);
+    transition: 150ms ease;
+}
+
+form input:hover {
+    border-color: var(--accent-color);
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--text-color);
+}
+
+div:has(input:focus)>label {
+    background-color: var(--text-color);
+    fill: var(--base-color);
+    color: var(--base-color);
+
+}
+
+form input::placeholder {
+    color: var(--text-color);
+    fill: var(--base-color);
+}
+
+form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: .85em 4em;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+form button:hover {
+    background-color: var(--text-color);
+    color: var(--base-color);
+}
+
+form button:focus {
+    outline: none;
+    background-color: var(--text-color);
+    
+}
+
+.create {
+
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper p {
+    color: var(--text-color);
+}
+
+
+
+.create:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 1100px) {
+    .wrapper {
+        width: min(600px, 100%);
+    }
+}
+
+form div.incorrect label {
+    background-color: #f06272;
+}
+
+form div.incorrect input {
+    border-color: #f06272;
+}
+
+#error-message {
+    color: #f06272;
+}

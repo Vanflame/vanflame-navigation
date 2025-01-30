@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="/styling/style.css">
+    <link rel="icon" href="/svg/folder_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.svg">
+    <script src="/sidebar.js"></script>
+    <script src="/styling/app.js"></script>
+    </head>
+
+    
+    <body>
+        <nav>
+            <ul class="sidebar">
+                </svg></a></li>
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="undefined">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/project-section/projects.html">Projects</a></li>
+                <li><a class="loginhide" href="/login-signup/login.html">Login</a></li>
+            </ul>
+            <ul>
+                <li><a href="/">NIY</a></li>
+                <li class="hidemobile" ><a href="#">About</a></li>
+                <li class="hidemobile" id="Projects"><a href="/project-section/projects.html">Projects</a></li>
+                <li class="hidemobile"><a id="Login" href="/index.html">Home</a></li>
+                <li class="menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="undefined">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <div class="movedown">
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">Centering Elements</label>
+            <div class="code1">
+                <div class="button">
+                <button onclick="copyText1()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EFEFEF">
+                        <path
+                            d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+                    </svg>
+                </button>
+                </div>
+                <div class="code" id="code1">
+                    <span class="property">display</span>: <span class="value">flex</span>;<br>
+                    <span class="property">align-items</span>: <span class="value">center</span>;<br>
+                    <span class="property">justify-content</span>: <span class="value">center</span>;
+                    </div>
+                
+                
+            </div>
+            </div>
+            <div class="movedown">
+                <input type="checkbox" id="checkbox2">
+                <label for="checkbox2">New Morphism Hovering</label>
+                <div class="code2">
+                    <div class="button">
+                        <button onclick="copyText2()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#EFEFEF">
+                                <path
+                                    d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="code" id="code2">
+                        <span class="property">
+                        box-shadow</span>: <span class="value">12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;</span>;<br>
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="movedown">
+                <input type="checkbox" id="checkbox3">
+                <label for="checkbox3">Gradient Text</label>
+                <div class="code3">
+                    <div class="button">
+                        <button onclick="copyText3()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#EFEFEF">
+                                <path
+                                    d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="code" id="code3">
+                        <span class="property">background</span>: <span class="value">linear-gradient(to right, red, rgb(11, 11, 223),yellow)</span>;<br>
+                        <span class="property">background-clip</span>: <span class="value">text</span>;<br>
+                        <span class="property">color</span>: <span class="value">transparent</span>; <br>
+                        <span class="property">display</span>: <span class="value">inline-block</span>;
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="movedown">
+                <input type="checkbox" id="checkbox4">
+                <label for="checkbox4">Adding Padding Inside an Element</label>
+                <div class="code4">
+                    <div class="button">
+                        <button onclick="copyText4()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#EFEFEF">
+                                <path
+                                    d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="code" id="code4">
+                        <span class="property">padding</span>: <span class="value">20px</span>;<br>
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="movedown">
+                <input type="checkbox" id="checkbox5">
+                <label for="checkbox5">Rounding the Corners of an Element</label>
+                <div class="code5">
+                    <div class="button">
+                        <button onclick="copyText5()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#EFEFEF">
+                                <path
+                                    d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="code" id="code5">
+                        <span class="property">border-radius</span>: <span class="value">10px</span>;<br>
+                        
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="movedown">
+                <input type="checkbox" id="checkbox6">
+                <label for="checkbox6">Setting the Text Color</label>
+                <div class="code6">
+                    <div class="button">
+                        <button onclick="copyText5()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#EFEFEF">
+                                <path
+                                    d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="code" id="code6">
+                        <span class="property">color</span>: <span class="value">#C9C9C9</span>;<br>
+                        
+                    </div>
+            
+            
+                </div>
+            </div>
+        </div>
+</body>
+</html>
