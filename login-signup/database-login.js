@@ -53,7 +53,7 @@ submit.addEventListener("click", function (e) {
         const formattedDate = date.toLocaleString();
 
         writeUserData(userId, email, formattedDate, 'login');
-        alert("loggedin")
+        window.location.href = "/vanflame-navigation/logged-in/index.html"
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -75,7 +75,7 @@ logoutBtn.addEventListener("click", function () {
 
       writeUserData(userId, user.email, formattedDate, 'logout');
     }
-    window.location.href = "login.html";
+    window.location.href = "/vanflame-navigation/login-signup/login.html";
   }).catch((error) => {
     console.error(error);
   });
