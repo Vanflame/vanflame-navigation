@@ -113,3 +113,21 @@ svg {
 
 
 }
+
+@media (max-width: 800px) {
+    .hidemobile {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        transition: 2s ease-in;
+    }
+}
+
+@media(max-width:400px) {
+    .sidebar {
+        width: 100%;
+    }
+
+}
