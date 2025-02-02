@@ -51,9 +51,9 @@ submit.addEventListener("click", function (e) {
         const timestamp = Date.now();
         const date = new Date(timestamp);
         const formattedDate = date.toLocaleString();
-
-        writeUserData(userId, email, formattedDate, 'login');
         
+        window.location.href = "/vanflame-navigation/logged-in/index.html"
+        writeUserData(userId, email, formattedDate, 'login');
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -64,7 +64,7 @@ submit.addEventListener("click", function (e) {
   }
 });
 
-logoutBtn.addEventListener("click", function () {
+logoutBtn.addEventListener ("click", function () {
   signOut(auth).then(() => {
     const user = auth.currentUser;
     if (user) {
