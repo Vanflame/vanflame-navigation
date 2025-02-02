@@ -56,7 +56,6 @@ submit.addEventListener("click", function (event) {
         const date = new Date(timestamp);
         const formattedDate = date.toLocaleString();
 
-        window.location.href = "/vanflame-navigation/logged-in/login.html"
         writeUserData(userId, name, email, formattedDate);
         alert('Success! User created.');
       })
