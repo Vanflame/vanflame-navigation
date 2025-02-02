@@ -58,7 +58,6 @@ submit.addEventListener("click", function (event) {
 
         writeUserData(userId, name, email, formattedDate);
         alert('Success! User created.');
-        window.location.href = "/vanflame-navigation/login-signup/login.html"
       })
       .catch((error) => {
         const errorCode = error.code;
