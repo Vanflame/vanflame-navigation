@@ -25,7 +25,6 @@ const email_input = document.getElementById('email-input');
 const password_input = document.getElementById('password-input');
 const error_message = document.getElementById('error-message'); // Ensure this element exists
 const submit = document.getElementById('submit');
-const logoutBtn = document.getElementById('logoutBtn'); // Ensure this element exists
 
 submit.addEventListener("click", function (e) {
   e.preventDefault(); // Prevent form submission
@@ -64,22 +63,8 @@ submit.addEventListener("click", function (e) {
   }
 });
 
-logoutBtn.addEventListener ("click", function () {
-  signOut(auth).then(() => {
-    const user = auth.currentUser;
-    if (user) {
-      const userId = user.uid;
-      const timestamp = Date.now();
-      const date = new Date(timestamp);
-      const formattedDate = date.toLocaleString();
 
-      writeUserData(userId, user.email, formattedDate, 'logout');
-    }
-    
-  }).catch((error) => {
-    console.error(error);
-  });
-});
+
 
 function getLoginFormErrors(email, password) {
   let errors = [];
